@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热身训练</title>
+</head>
+<style>
+input {width: 70px;height: 30px;}
+div {width: 200px;height: 200px;background: #ff00aac9;display: none;text-align: center;line-height: 200px;}
+</style>
+<script>
+    window.onload = function(){
+        var oBtn1=document.getElementById('show_btn');
+        var oBtn2=document.getElementById('hide_btn');
+        var oDiv1=document.getElementById('div1');
+        var oDiv2=document.getElementById('div2');
+
+        oBtn1.onmouseover=function(){
+           oDiv1.style.display='block';
+           oDiv2.style.display='none';
+        }
+        oBtn2.onmouseover=function(){
+            oDiv2.style.display='block';
+            oDiv1.style.display="none";
+            oDiv2.style.backgroundColor="pink";
+            //alert('test');
+        }
+        oDiv1.onmouseout=function(){
+             oDiv1.style.display='none';
+             oDiv2.style.display='none';
+        }
+        oDiv2.onmouseout=function(){
+             oDiv1.style.display='none';
+             oDiv2.style.display='none';
+        }
+ 
+    }
+</script>
+<body>
+    <input id="show_btn" type="button" value="显示">
+    <input id="hide_btn" type="button" value="隐藏">
+    <div id="div1">你是真的皮~~</div>
+    <div id="div2">你是真的菜~~</div>
+</body>
+</html>

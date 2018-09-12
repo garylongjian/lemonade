@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Div样式</title>
+</head>
+
+<style>
+    input{width: 70px;height: 30px;background: red;padding: 0;border: none;}
+    /* padding:padding 简写属性在一个声明中设置所有内边距属性。
+        eg:padding:10px 5px 15px 20px;
+            上内边距是 10px
+            右内边距是 5px
+            下内边距是 15px
+            左内边距是 20px
+        border:border 简写属性在一个声明设置所有的边框属性。
+     */
+     #div1{width: 200px;height: 200px; border: 5px solid #000;margin-top: 20px;}
+     /*
+     solid:定义实线
+     margin-top:属性设置元素的上外边距。 注释:允许使用负值。 默认值: 0 继承性: no
+     */
+     #setting{width: 390px;height: 250px;border: 25px solid #0000001f;display: none;
+            position: absolute;
+            top: 30%;
+            left: 40%;
+          /*-webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); 
+            css绝对定位（具体查看）：http://www.w3school.com.cn/css/css_positioning_absolute.asp
+            eg: position: absolute;
+                top: 50%;
+                left: 50%;
+            */
+            }
+        #content{margin-top: 20px; margin-left: 20px;}
+        #content input{width: 70px;height: 35px;border: 1px solid #000;background-color: rgba(240, 248, 255, 0.74)}
+        #content-2{margin-top: 20px;}
+        #content-3{margin-top: 20px;}
+        #content-4{margin-top: 30px;margin-left: 100px;}
+        #content-4 input{background-color: #002952a9;}
+        #btn_11{margin-left: 20px;}
+        #content input:hover{background: orange;}
+
+</style>
+
+<body>
+    <strong>请为下面Div设置样式：</strong>
+    <input id="btn1" type="button" value="点击设置">
+    <div id="div1"></div>
+    <div id="setting">
+            <div id="content">
+            <div id="content-1">
+            请选择背景色&nbsp&nbsp&nbsp&nbsp：
+            <input id="btn_2"style="background:rgba(115, 255, 0, 0.568);" type="button" value="红">
+            <input id="btn_3"style="background:rgba(229, 255, 0, 0.527);"type="button" value="黄">
+            <input id="btn_4"style="background:rgba(0, 0, 255, 0.623);"type="button" value="蓝">
+        </div>
+        <div id="content-2">
+                请选择宽（px）：
+                <input type="button" value="300">
+                <input type="button" value="400">
+                <input type="button" value="500">
+            </div>
+        <div id="content-3">
+            请选择高（px）：
+            <input type="button" value="300">
+            <input type="button" value="400">
+            <input type="button" value="500">
+        </div>
+        <div id="content-4">
+                <input type="button" value="恢复">
+                <input id="btn_11"type="button" value="确定">
+            </div>
+        </div>
+        </div>
+</body>
+<script>
+    window.onload=function(){
+        var oBtn1=document.getElementById("btn1");
+        var oDiv1=document.getElementById("div1");
+        var oSetting=document.getElementById("setting");
+        var oInput=document.getElementsByTagName("input");
+        var oBtn2=document.getElementById("btn_2");
+        var oBtn3=document.getElementById("btn_3");
+        var oBtn4=document.getElementById("btn_4");
+        var oBtn11=document.getElementById("btn_11");
+
+    oBtn1.onclick=function(){
+        oSetting.style.display="block";
+    }
+    oInput[1].onclick=function(){
+        oDiv1.style.background="red";
+    }
+    oInput[2].onclick=function(){
+        oDiv1.style.backgroundColor="yellow";
+    }
+    oInput[3].onclick=function(){
+        oDiv1.style.backgroundColor="blue";
+    }
+    oInput[4].onclick=function(){
+        oDiv1.style.width="300px";
+    }
+    oInput[5].onclick=function(){
+        oDiv1.style.width="400px";
+    }
+    oInput[6].onclick=function(){
+        oDiv1.style.width="500px";
+    }
+    oInput[7].onclick=function(){
+        oDiv1.style.height="300px";
+    }
+    oInput[8].onclick=function(){
+        oDiv1.style.height="400px";
+    }
+    oInput[9].onclick=function(){
+        oDiv1.style.height="500px";
+    }
+    oInput[10].onclick=function(){
+        oDiv1.style.width="200px";
+        oDiv1.style.height="200px";
+        oDiv1.style.background="rgba(0, 0, 255, 0)"
+    }
+    oBtn11.onclick=function(){
+        oSetting.style.display="none";
+    }
+    oBtn2.onmouseover=function(){
+        oBtn2.style.background="red";
+    }
+    oBtn3.onmouseover=function(){
+        oBtn3.style.background="yellow";
+    }
+    oBtn4.onmouseover=function(){
+        oBtn4.style.background="blue";
+    }
+    oBtn2.onmouseout=function(){
+        oBtn2.style.background="rgba(115, 255, 0, 0.568)";
+    }
+    oBtn3.onmouseout=function(){
+        oBtn3.style.background="rgba(229, 255, 0, 0.527)";
+    }
+    oBtn4.onmouseout=function(){
+        oBtn4.style.background="rgba(0, 0, 255, 0.623)";
+    }
+    }
+</script>
+</html>

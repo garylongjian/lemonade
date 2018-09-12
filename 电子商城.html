@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>属于自己的淘宝网站</title>
+    <link rel="icon" type="image/x-icon" href="C://Users//Administrator//Desktop//image//bitbug.ico"/>
+</head>
+
+<style>
+*{margin: 0;}
+#Div1{width: 100%;height: 70px;background-image: url(C://Users//Administrator//Desktop//image//1.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: none;
+    }
+#Div2{width: 100%;
+     height: 40px;
+     background-color: rgba(60, 60, 60, 0.062);
+    }
+/* #Div2_1{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 360PX;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 14px;
+} */
+#Span2{
+    line-height: 40px;
+    font-family: global-iconfont;
+    color:rgba(20, 19, 19, 0.651);
+    font-size: 12px;
+    }
+#Span1{
+    line-height: 40px;/*属性设置行间的距离（行高）。*/
+    margin-left: 360PX;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 14px;
+    }
+#Span2{
+    line-height: 40px;
+    font-family: global-iconfont;
+    color:rgba(20, 19, 19, 0.651);
+    font-size: 12px;
+    }
+#Span3{
+    margin-left: 15px;
+    color: #6C6C6C;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+#Span4{
+    margin-left: 370px;
+    color: #6C6C6C;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+#Div3{
+    height:120px;
+    width: 100%;
+    /* border: 1px solid #000000; */
+    display: flex;
+    justify-content: center;/*左右居中*/
+    align-items: center; /*上下居中*/
+    }
+#Div4{
+    width: 143px;
+    height: 59px;
+    background-image: url(C://Users//Administrator//Desktop//image//2.png);
+    margin: 50px;
+    margin-left: 20px;
+    }
+#Div4:hover{
+        cursor:pointer;
+    }
+#a1{
+    margin-left: 10px;
+    color: #f22e00!important;
+    text-decoration: none;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    font-size: 14px;
+    }
+#a2{
+    margin-left: 10px;
+    color: #6C6C6C;
+    font-family: tahoma, arial, "Hiragino Sans GB", 宋体, sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+}
+#image1{
+    line-height: 40px;
+    margin-left:5px;
+    width: 12px;
+    height: 12px;
+}
+/*
+flex布局justify-content属性和align-items，align-self属性: https://blog.csdn.net/Phoebe_16/article/details/78562152
+*/
+#Input1{margin-left:97.8%;}
+#Input2{
+        width: 600px;
+        height: 40px;
+        margin:0;
+        font-size:17px;
+        border: 3px solid rgba(255, 60, 0, 0.719);
+        vertical-align: middle;
+    }
+#Input3{
+    height: 48px;
+    margin: 0;
+    vertical-align: middle;
+    border: none;
+    background-color: rgba(255, 60, 0, 0.719);
+    padding: 0 25px;
+    color: white;
+    font-size: 16px;
+    }
+#Input3:hover{
+        cursor:pointer;
+    }
+
+/*
+background-color: rgba(0, 140, 255, 0.781)
+font-family:设置字体样式
+*/
+</style>
+
+<body>
+    <div id="Div1">
+        <input id="Input1" type="button" value="关闭">
+    </div>
+    <div id="Div2">
+        <!-- <div id="Div2_1"> -->
+                <span id="Span1">中国大陆</span>
+                <span id="Span2">&nbsp∨</span>
+        <!-- </div> -->
+        <a href="https://login.taobao.com/member/login.jhtml?f=top&redirectURL=https%3A%2F%2Fwww.taobao.com%2F" id="a1">亲，请登录</a> 
+        <a href="https://reg.taobao.com/member/new_register.jhtml?from=tbtop&ex_info=&ex_sign=" id="a2">免费注册</a>
+        <span id="Span3">手机逛淘宝</span>
+        <span id="Span4">我的淘宝</span>
+        <span id="Span2">∨</span>
+        <span id="a2"> <i><img  id="image1" src="C://Users//Administrator//Desktop//image//购物车.png"></i>&nbsp购物车</span>
+        <span id="Span2">∨</span>
+        <span id="a2"> <i><img  id="image1" src="C://Users//Administrator//Desktop//image//聚收藏.png"></i>收藏夹</span>
+        <span id="Span2">∨</span>
+        <span id="a2">商品分类</span>
+        <span style="color:rgba(165, 158, 158, 0.712);margin-left: 20px;">|</span>
+        <span id="a2">卖家中心</span>
+        <span id="Span2">∨</span>
+        <span id="a2"><i><img id="image1" src="C://Users//Administrator//Desktop//image//createtask.png"></i>网站导航</span>
+        <span id="Span2">∨</span>
+    </div>
+    <div id="Div3">
+        <div id="Div4"></div>
+        <input id="Input2" type="text" placeholder="请输入要搜索的词">
+        <input id="Input3" type="button" value="搜索">   
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var Input_1=document.getElementById("Input1");
+        var Div_1=document.getElementById("Div1");
+        var Div_2=document.getElementById("Div2");
+        var Span_1=document.getElementById("Span1");
+        
+        Input_1.onclick=function(){
+            Div_1.style.display="none";
+            Div_2.style.display="block";
+        }
+        Span_1.onmouseover=function(){
+
+        }
+    }
+
+
+</script>
+
+</html>

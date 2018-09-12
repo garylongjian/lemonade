@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input{
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+        span{
+            font: bold 20px '微软雅黑', sans-serif;
+        }
+        #btn1{
+            width: 80px;
+            height: 35px;
+            background: #f00;
+            color: #fff;width: 80px;
+            height: 35px;
+            background: #f00;
+            color: #fff;
+        }
+        #div1{
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            border: 5px solid #000;
+        }
+        #settings{
+            width: 350px;
+            background: rgba(0,0,0,0.3);
+            padding: 20px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            display: none;
+        }
+        #content{
+            height: 250px;
+            background: #fff;
+            overflow: hidden;
+        }
+        #content div{
+            font-size: 14px;
+            margin: 30px;
+        }
+        #content input{
+            width: 50px;
+            height: 30px;
+            background: #eee;
+            border: 1px solid #000;
+        }
+        #content input:hover{
+            background: orange;
+        }
+        #content-1 input:nth-child(1){
+            background: #f00;
+        }
+        #content-1 input:nth-child(2){
+            background: #ff0;
+        }
+        #content-1 input:nth-child(3){
+            background: #00f;
+        }
+        #content-4{
+            text-align: center;
+        }
+        #content-4 input{
+            background: #002952;
+            color: #fff;
+        }
+    </style>
+    <script>
+        window.onload=function () {
+            var oBtn1=document.getElementById('btn1');
+            var oDiv1=document.getElementById('div1');
+            var oSettings=document.getElementById('settings');
+            var aBtn=oSettings.getElementsByTagName('input');
+
+            oBtn1.onclick=function () {
+                oSettings.style.display='block';
+            };
+            aBtn[0].onclick=function () {
+                oDiv1.style.background='#f00';
+            };
+            aBtn[1].onclick=function () {
+                oDiv1.style.background='#ff0';
+            };
+            aBtn[2].onclick=function () {
+                oDiv1.style.background='#00f';
+            };
+            aBtn[3].onclick=function () {
+                oDiv1.style.width='200px';
+            };
+            aBtn[4].onclick=function () {
+                oDiv1.style.width='300px';
+            };
+            aBtn[5].onclick=function () {
+                oDiv1.style.width='400px';
+            };
+            aBtn[6].onclick=function () {
+                oDiv1.style.height='200px';
+            };
+            aBtn[7].onclick=function () {
+                oDiv1.style.height='300px';
+            };
+            aBtn[8].onclick=function () {
+                oDiv1.style.height='400px';
+            };
+            aBtn[9].onclick=function () {
+                oDiv1.style.width='100px';
+                oDiv1.style.height='100px';
+                oDiv1.style.background='#fff';
+            };
+            aBtn[10].onclick=function () {
+                oSettings.style.display='none';
+            };
+        }
+    </script>
+</head>
+<body>
+<span>请为下面的DIV设置样式：</span>
+<input type="button" value="点击设置" id="btn1">
+<div id="div1"></div>
+<div id="settings">
+    <div id="content">
+        <div id="content-1">
+            请选择背景色：
+            <input type="button" value="红">
+            <input type="button" value="黄">
+            <input type="button" value="蓝">
+        </div>
+        <div id="content-2">
+            请选择宽（px）：
+            <input type="button" value="200">
+            <input type="button" value="300">
+            <input type="button" value="400">
+        </div>
+        <div id="content-3">
+            请选择高（px）：
+            <input type="button" value="200">
+            <input type="button" value="300">
+            <input type="button" value="400">
+        </div>
+        <div id="content-4">
+            <input type="button" value="恢复">
+            <input type="button" value="确定">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
