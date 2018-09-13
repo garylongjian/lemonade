@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录界面</title>
+</head>
+<style>
+html, body {
+margin:0;
+padding:0;
+font-family: tahoma,arial,'Hiragino Sans GB','微软雅黑',sans-serif;
+}
+.container {
+height:100%;width:100%;
+/*width: 100%;*/
+border: 1px solid green;
+position:fixed;
+background: url(C://Users//龙健//Desktop//Excel//login.jpg);
+background-size:cover;
+text-align:center;
+}
+#Div1{
+    height: 370px;
+    width: 400px;
+    /* border: 5px solid rgba(0, 217, 255, 0.555); */
+    margin:0 auto;
+    margin-top:10%;
+}
+#Div2{
+    background-image: url(C://Users//龙健//Desktop//Excel//3.jpg);
+    background-position-x:400px;
+    background-position-y: 100px;
+    background-size: cover;
+    width: 200px;
+    height: 80px;
+    margin-left: 100px;
+    border-radius: 19px;
+}
+#Div3{
+    margin-top: 20px;
+    width:400px;
+    height:100px;
+}
+#Input1{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    outline: none;/*去掉点击后出现的边框*/
+    background-color: transparent;/*INPUT 背景色设置为透明*/
+    
+}
+.test1::-webkit-input-placeholder{
+    color: white;
+    font-size: 15px;
+    }
+#Div4{
+    margin-top: -25px;
+}
+#Div5{
+    margin-top: 30px;
+}
+#Input2{
+    border: #fff;
+    background-color: #e15671;
+    outline: none;
+    border-radius: 25px;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+}
+#Div6{
+    width: 400px;
+    height: 40px;
+    line-height: 40px;
+    color:white;
+    margin-top: 10px;
+}
+#Span1{
+    margin-left: -10px;
+}
+#Span2{
+    margin-left: 50px;
+}
+#Span3{
+    margin-left: 5px;
+    color: #e15671;
+}
+</style>
+
+<body>
+    <div class="container">
+         <div id="Div1">
+             <div id="Div2"></div>
+             <div id="Div3">             
+                 <input class="test1" id="Input1" spellcheck ="false" type="用户名" placeholder="请输入用户名">
+                 <!-- spellcheck ="false"  去除input框有数字与字母的时候出现红色波浪线 -->
+            </div>
+            <div id="Div4">
+                 <input type="password" id="Input1" class="test1" spellcheck ="false name="密码" placeholder="请输入密码">
+            </div>
+            <div id="Div5">
+                    <button class="test1" id="Input2">登录</button>
+                </div>
+            <div id="Div6">
+                <span id="Span1">忘记密码?</span>
+                <span id="Span2">还没有账号?</span>
+                <span id="Span3">立即注册</span>
+            </div>
+         </div>
+    </div>
+</body>
+
+<script>
+    window.onload=function(){
+        var sInput1=document.getElementById("Input1");
+        var sTest1=document.getElementsByClassName("test1");
+        var scontainer=document.getElementsByClassName("container");
+        var sDiv1=document.getElementById("Div1");
+
+        sInput1.onclick=function(){
+            sInput1.style.backgroundColor="white"; 
+        sDiv1.onclick=function(){
+            sInput1.style.backgroundColor="yellow";
+        }
+        }
+        
+
+    }
+</script>
+</html>
